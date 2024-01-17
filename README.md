@@ -24,7 +24,7 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
   Click on the created role, and copy the Role ARN. You'll need this for the next step.
 
 ### **IAM User Association**:
-  You need an IAM user, who will assume the S3UploadRole.
+  You need an IAM user, who will assume the new role. Create an Iam user or use existing one.
   
   Ensure the IAM user has the necessary permissions to assume roles (sts:AssumeRole permission).
   
