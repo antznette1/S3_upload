@@ -50,6 +50,9 @@ aws configure --profile <profilename>
 
 You'll be prompted to enter AWS access key, secret key, default region, and output format. Provide the access and secret key associated with the IAM user with the attached role.
 
+
+aws configure set profile.your-profile-name.role_arn arn:aws:iam::account-id:role/S3UploadRole
+
 ## **create the Script**
 
 Create a file and navigate into the file to write your script using the command below (your script name can be anything but end with .sh)
