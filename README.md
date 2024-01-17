@@ -11,9 +11,9 @@ Welcome to my step-by-step guide on using the AWS CLI to upload files to Amazon 
 ## **AM Role Creation**
 When using the AWS CLI to interact with AWS services, it's a best practice to employ IAM roles rather than exposing access keys directly. Follow these steps to create an IAM role with the minimal privileges required for S3 operations:
 
-1. Open the AWS Management Console and navigate to the IAM dashboard.
+  Open the AWS Management Console and navigate to the IAM dashboard.
 
-2. Select "Roles" and click "Create role."
+  Select "Roles" and click "Create role."
 
 3. Choose "AWS service" as the trusted entity and "EC2" as the use case.
 
