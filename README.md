@@ -45,12 +45,13 @@ Additionally, set the role ARN for the named profile:
 
 Replace <profilename> with the desired profile name, and <role arn> with the copied role ARN from the IAM role creation step. This ensures that the AWS CLI uses the specified role when interacting with AWS services using the configured profile.
 
-## **create the Script**
+## **Create the Script**
 
 Create a file and navigate into the file to write your script using the command below (your script name can be anything but end with .sh)
 
-   touch s3_upload.sh
-   nano s3_upload.sh
+    touch s3_upload.sh
+    
+    nano s3_upload.sh
 
 ![image](https://github.com/antznette1/S3_upload/blob/main/bash_scipt.png)
 
