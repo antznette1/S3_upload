@@ -1,0 +1,8 @@
+# Ignore temporary files
+*~
+
+# Ignore log files
+*.log
+
+# Ignore sensitive information
+credentials.json
