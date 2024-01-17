@@ -54,23 +54,23 @@ nano s3_upload.sh
 
 ![image](https://github.com/antznette1/S3_upload/blob/main/bash_scipt.png)
 
-The script has been attached to this repo
+Full script has been attached to this repo
 
 Explanation:
 
    display_error Function: Displays error messages and exits the script in case of an error.
 
-    display_success Function: Displays a success message upon successful completion of the file upload process.
+   display_success Function: Displays a success message upon successful completion of the file upload process.
 
-    Command-line Arguments: The script expects a minimum of two arguments: <bucket_name> and <file1>. Additional files (file2 ... fileN) and an optional target directory can be provided.
+   Command-line Arguments: The script expects a minimum of two arguments: <bucket_name> and <file1>. Additional files (file2 ... fileN) and an optional target directory can be provided.
 
-    File Existence Check: Checks if each specified file exists before attempting to upload. Displays an error message if a file is not found.
+   File Existence Check: Checks if each specified file exists before attempting to upload. Displays an error message if a file is not found.
 
-    AWS S3 Upload Command: Utilizes the AWS CLI to upload each file to the specified S3 bucket and directory. The --profile antznette option specifies the AWS CLI profile.
+   AWS S3 Upload Command: Utilizes the AWS CLI to upload each file to the specified S3 bucket and directory. The --profile antznette option specifies the AWS CLI profile.
 
-    Exit Status Check: After each file upload, the script checks the exit status of the last command (aws s3 ...). A non-zero exit status indicates an error, triggering the display of an appropriate error message.
+   Exit Status Check: After each file upload, the script checks the exit status of the last command (aws s3 ...). A non-zero exit status indicates an error, triggering the display of an appropriate error message.
 
-    Success Message: Displays a success message if all file uploads are successful.
+   Success Message: Displays a success message if all file uploads are successful.
 
 The shift command removes the first argument (BUCKET_NAME) from the list of parameters, simplifying the processing of the remaining arguments.
 
@@ -84,32 +84,21 @@ In Nano, Ctrl + X to exit, Press Y to confirm changes and Enter to save the file
 Make the script executable by running chmod +x s3_upload.sh
 
 
-Usage
-Basic Usage
+## **Usage**
 
-bash
+Upload a Single File:
 
-./s3_upload.sh s3_bucket_name file1.txt [file2 ... fileN] [target_directory]
-
-Examples
-
-    Upload a Single File:
-
-    bash
-
-./s3_upload.sh my_bucket_name my_file.txt
+   ./s3_upload.sh my_bucket_name my_file.txt
 
 Upload Multiple Files to a Specific Directory:
 
-bash
-
     ./s3_upload.sh my_bucket_name file1.txt file2.txt target_directory
 
-Folder or No Folder
+## **Folder or No Folder**
 
     If only one file is uploaded, it will be placed directly in the root of the bucket.
     If multiple files are uploaded, they will be placed in the specified target directory.
 
-Troubleshooting
+##  **Troubleshooting**
 
     If you encounter an "Upload failed" error, check the error message displayed. Common issues include incorrect file paths or AWS CLI configuration.
