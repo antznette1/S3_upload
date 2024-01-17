@@ -30,12 +30,11 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
   
   Edit the trust relationship of the Role to allow the IAM user to assume this role.
 
-![image](https://github.com/antznette1/S3_upload/blob/main/trust_policy.png)
-
 
 ## **AWS CLI Profile Configuration**
 
 On the terminal and run the following command to configure a named profile:
+
     aws configure --profile <profilename>
 
 You'll be prompted to enter the AWS access key, secret key, default region, and output format. Provide the access and secret key associated with the IAM user with the attached role.
@@ -53,6 +52,9 @@ Create a file and navigate into the file to write your script using the command 
 touch s3_upload.sh
 nano s3_upload.sh
 
+![image](https://github.com/antznette1/S3_upload/blob/main/bash_scipt.png)
+
+The script has been attached to this repo
 
 Explanation:
 
