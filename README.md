@@ -81,14 +81,16 @@ In Nano, Ctrl + X to exit, Press Y to confirm changes and Enter to save the file
 
 ## **Set Execution Permission**
 
-Make the script executable by running chmod +x s3_upload.sh
+Make the script executable by running 
+  
+    chmod +x s3_upload.sh
 
 
 ## **Usage**
 
 Upload a Single File:
 
-   ./s3_upload.sh my_bucket_name my_file.txt
+    ./s3_upload.sh my_bucket_name my_file.txt
 
 Upload Multiple Files to a Specific Directory:
 
