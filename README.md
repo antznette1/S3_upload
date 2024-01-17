@@ -36,12 +36,13 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
 ## **AWS CLI Profile Configuration**
 
 On the terminal and run the following command to configure a named profile:
-1. aws configure --profile <profilename>
+    aws configure --profile <profilename>
 
 You'll be prompted to enter the AWS access key, secret key, default region, and output format. Provide the access and secret key associated with the IAM user with the attached role.
 
 Additionally, set the role ARN for the named profile: 
-2. aws configure set profile.<profilename>.role_arn <role arn>
+
+    aws configure set profile.<profilename>.role_arn <role arn>
 
 Replace <profilename> with the desired profile name, and <role arn> with the copied role ARN from the IAM role creation step. This ensures that the AWS CLI uses the specified role when interacting with AWS services using the configured profile.
 
