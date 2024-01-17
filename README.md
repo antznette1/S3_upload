@@ -15,13 +15,13 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
 
   Select "Roles" and click "Create role."
 
-3. Choose "AWS service" as the trusted entity and "EC2" as the use case.
+  Choose "AWS service" as the trusted entity and "EC2" as the use case.
 
-    Attach policies, such as AmazonS3FullAccess, based on your requirements.
+  Attach policies, such as AmazonS3FullAccess, based on your requirements.
 
-    Provide a meaningful name, e.g., S3UploadRole, and click "Create role."
+  Provide a meaningful name, e.g., S3UploadRole, and click "Create role."
 
-    Click on the created role, and copy the Role ARN. You'll need this for the next step.
+  Click on the created role, and copy the Role ARN. You'll need this for the next step.
 
 ### **IAM User Association**:
     You need an IAM user, who will assume the S3UploadRole.
