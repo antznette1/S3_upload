@@ -18,7 +18,7 @@ To do this:
     Provide a name (e.g., S3UploadRole) and click "Create role."
     Click on the created role. Copy the Role ARN. (You will need this for the next step
 
-IAM User Association:
+### **IAM User Association**:
     You need an IAM user, who will assume the S3UploadRole.
     Ensure the IAM user has the necessary permissions to assume roles (sts:AssumeRole permission).
     Edit the trust relationship of the Role to allow the IAM user to assume this role.
