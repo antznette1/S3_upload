@@ -30,21 +30,20 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
   
   Edit the trust relationship of the Role to allow the IAM user to assume this role.
 
-Example trust relationship policy:
-
 ![image](https://github.com/antznette1/S3_upload/blob/main/trust_policy.png)
 
 
 ## **AWS CLI Profile Configuration**
 
-Open a terminal.Run the following command to configure the antznette profile:
+On the terminal and run the following command to configure a named profile:
+   aws configure --profile <profilename>
 
-aws configure --profile <profilename>
+You'll be prompted to enter the AWS access key, secret key, default region, and output format. Provide the access and secret key associated with the IAM user with the attached role.
 
-You'll be prompted to enter AWS access key, secret key, default region, and output format. Provide the access and secret key associated with the IAM user with the attached role.
+Additionally, set the role ARN for the named profile: 
+   aws configure set profile.<profilename>.role_arn <role arn>
 
-
-aws configure set profile.your-profile-name.role_arn arn:aws:iam::account-id:role/S3UploadRole
+Replace <profilename> with the desired profile name, and <role arn> with the copied role ARN from the IAM role creation step. This ensures that the AWS CLI uses the specified role when interacting with AWS services using the configured profile.
 
 ## **create the Script**
 
