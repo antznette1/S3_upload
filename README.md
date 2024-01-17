@@ -31,16 +31,8 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
   Edit the trust relationship of the Role to allow the IAM user to assume this role.
 
 Example trust relationship policy:
+![image](https://github.com/antznette1/S3_upload/blob/main/trust_policy.png)
 
-json
-
-{
-  "Effect": "Allow",
-  "Principal": {
-    "AWS": "arn:aws:iam::<account-id>:user/<iamusername>"
-  },
-  "Action": "sts:AssumeRole"
-}
 
 ## **AWS CLI Profile Configuration**
 
