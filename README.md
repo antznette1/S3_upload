@@ -49,8 +49,8 @@ Replace <profilename> with the desired profile name, and <role arn> with the cop
 
 Create a file and navigate into the file to write your script using the command below (your script name can be anything but end with .sh)
 
-touch s3_upload.sh
-nano s3_upload.sh
+   touch s3_upload.sh
+   nano s3_upload.sh
 
 ![image](https://github.com/antznette1/S3_upload/blob/main/bash_scipt.png)
 
