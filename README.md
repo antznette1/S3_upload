@@ -72,7 +72,7 @@ Explanation:
 
    Success Message: Displays a success message if all file uploads are successful.
 
-The shift command removes the first argument (BUCKET_NAME) from the list of parameters, simplifying the processing of the remaining arguments.
+   The shift command removes the first argument (BUCKET_NAME) from the list of parameters, simplifying the processing of the remaining arguments.
 
 
 ## **Save and Exit**
@@ -98,9 +98,10 @@ Upload Multiple Files to a Specific Directory:
 
 ## **Folder or No Folder**
 
-    If only one file is uploaded, it will be placed directly in the root of the bucket.
-    If multiple files are uploaded, they will be placed in the specified target directory.
+If only one file is uploaded, it will be placed directly in the root of the bucket.
+
+If multiple files are uploaded, they will be placed in the specified target directory.
 
 ##  **Troubleshooting**
 
-    If you encounter an "Upload failed" error, check the error message displayed. Common issues include incorrect file paths or AWS CLI configuration.
+If you encounter an "Upload failed" error, check the error message displayed. Common issues include incorrect file paths or AWS CLI configuration.
