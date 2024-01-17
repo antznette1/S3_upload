@@ -25,7 +25,9 @@ When using the AWS CLI to interact with AWS services, it's a best practice to em
 
 ### **IAM User Association**:
   You need an IAM user, who will assume the S3UploadRole.
+  
   Ensure the IAM user has the necessary permissions to assume roles (sts:AssumeRole permission).
+  
   Edit the trust relationship of the Role to allow the IAM user to assume this role.
 
 Example trust relationship policy:
